@@ -1,0 +1,243 @@
+
+/********************************************* */
+/********* Contact Landing */
+
+
+.contact-landing {
+    height: 75vh;
+    background-color: var(--three-color);
+}
+
+.contact-landing-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem 6rem;
+}
+
+.contact-landing-container h1 {
+    color: var(--one-color);
+    font-family: var(--flair-font);
+    font-size: 3rem;
+    margin-bottom: rem;
+    border-bottom: 2px solid var(--two-color);
+}
+
+.contact-landing-container h3 {
+    color: var(--main-color);
+    font-family: var(--flair-font);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.contact-logo {
+    height: 8rem;
+    width: 8rem;
+    
+}
+.contact-logo .logo {
+    background-color: black;
+    border: 5px solid var(--one-color);
+    color: var(--two-color);
+}
+
+
+@media only screen and (max-width: 750px) {
+    .contact-landing-container h1 {
+        font-size: 2.4rem;
+    }
+    .contact-landing-container h3 {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+
+/********************************************* */
+/********* Maps Section */
+
+.maps-section {
+   /* background-color: var(--one-color);   */
+    background-image: linear-gradient(
+        360deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6) ), url(images-c/pizza-oven-background-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;;
+}
+
+.outer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.outer h2 {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin: 4rem 0rem 2rem;
+    text-align: center;
+    color: var(--sec-text-color);
+}
+
+
+.maps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+
+.map {
+    margin: 3rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--sec-text-color);
+}
+.map h3 {
+    font-family: var(--flair-font);
+    padding-bottom: 10px;
+    text-decoration: underline 2px solid var(--sec-text-color);
+    text-align: center;
+}
+
+.van-times {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.van-times ul li {
+    list-style: none;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+}
+
+.map iframe {
+    height: 14rem;
+    width: 24rem;
+    border-radius: 5%;
+}
+
+
+/********************************************* */
+/********* Contact Section */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 4rem;
+}
+
+.contact-container h2 {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin: 4rem 0rem 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-top: 3rem;
+}
+
+form input,textarea {
+    height: 3rem;
+    border: 2px solid var(--sec-text-color);
+    border-bottom: none;
+    background-color: transparent;
+    padding: 10px;
+    color: var(--sec-text-color);
+}
+form textarea {
+    height: 8rem;
+}
+form input,textarea:focus {
+    outline: none;
+}
+form input::placeholder,textarea::placeholder {
+    color: var(--sec-text-color);
+}
+
+form button {
+    cursor: pointer;
+    height: 3rem;
+    background-color: transparent;
+    color: var(--sec-text-color);
+    border: 2px solid var(--sec-text-color);
+    transition: all .4s;
+}
+form button:hover {
+    background-color: var(--one-color);
+    transition: all .4s;
+}
+
+.social-media {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media h1 {
+    color: var(--two-color);
+    font-family: var(--flair-font);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--one-color);
+}
+
+.form-logo .logo {
+    border: 5px solid var(--one-color);
+    color: var(--two-color);
+    background-color: black;
+}
+
+
+.s-m-links {
+    display: flex;
+    margin-top: 4rem;
+    background-color: var(--two-color);
+}
+
+.icon img {
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 999px) {
+    .outer {
+        flex-direction: column;
+    }
+    
+    .maps-container {
+        width: 100%;
+    }
+
+    .map iframe {
+        height: 14rem;
+        width: 18rem;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+    form {
+        width: 80%;
+    }
+}
